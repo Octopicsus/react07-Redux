@@ -1,7 +1,7 @@
 import "./App.css";
-import Tobuy from "./Widgets/Tobuy/Cart";
-import InputAdd from "./Widgets/Tobuy/InputAdd";
-import ProductAdd from "./Widgets/Tobuy/ProductAdd";
+import Tobuy from "./Widgets/Bring/Cart";
+import InputAdd from "./Widgets/Bring/InputAdd";
+import ProductAdd from "./Widgets/Bring/ProductAdd";
 
 
 function App() {

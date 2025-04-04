@@ -17,9 +17,11 @@ export const productsSlice = createSlice({
 export const { setProducts } = productsSlice.actions;
 
 export const selectAvailableProducts = (state) => {
-  const cartItemIds = state.cart.data.map((item) => item.id);
+  const cartItemId = state.cart.data.map((item) => item.id);
+  console.log(cartItemId)
+
   return state.products.items.filter(
-    (product) => !cartItemIds.includes(product.id)
+    (product) => !cartItemId.includes(product.id)
   );
 };
 
