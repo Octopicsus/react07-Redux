@@ -3,8 +3,8 @@ import { useDispatch, useSelector } from "react-redux";
 import { deleteItem } from "../../Store/features/tobuySlice";
 import styled from "styled-components";
 
-export default function Tobuy() {
-  const itmeBuy = useSelector((state) => state.tobuy);
+export default function Cart() {
+  const itmeBuy = useSelector((state) => state.cart);
   const dispatch = useDispatch();
 
   const handleRemove = (item) => {
@@ -13,11 +13,12 @@ export default function Tobuy() {
 
   return (
     <>
-      <Cart>
-        <h1>Products</h1>
+      <MyCart>
+        <h1>Bring App</h1>
+
         {itmeBuy.data.length > 0 && <Title>Cart:</Title>}
         <Wrapper>
-        {itmeBuy.data.length === 0 && <Empty>Your cart is empty</Empty>}
+          {itmeBuy.data.length === 0 && <Empty>Your cart is empty</Empty>}
           {itmeBuy.data.map((item) => (
             <Product
               className="productItem"
@@ -30,7 +31,7 @@ export default function Tobuy() {
             </Product>
           ))}
         </Wrapper>
-      </Cart>
+      </MyCart>
     </>
   );
 }
@@ -46,7 +47,7 @@ const Wrapper = styled.div`
   min-height: 100px;
 `;
 
-const Cart = styled.div`
+const MyCart = styled.div`
   margin: 0 auto;
   max-width: 409px;
 `;
@@ -61,7 +62,7 @@ const Product = styled.button`
 `;
 
 const Empty = styled.span`
-margin-top: 40px;
+  margin-top: 40px;
   width: 100%;
   text-align: center;
 `;

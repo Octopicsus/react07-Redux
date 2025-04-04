@@ -18,23 +18,53 @@ export default function InputAdd() {
       handleSave();
     }
   };
-  
+
   return (
     <HandleInput>
-      <input
+      <InputType
         type="text"
         value={item}
         onChange={(event) => setItem(event.target.value)}
         onKeyDown={handleKeyDown}
+        placeholder="Add your purchase to the list"
       />
 
-      <button type="button" onClick={handleSave}>
-        Add
-      </button>
+      <ButtonAdd type="button" onClick={handleSave}>
+        +
+      </ButtonAdd>
     </HandleInput>
   );
 }
 
 const HandleInput = styled.div`
+  margin: 0 auto;
   margin-top: 50px;
-`
+  background-color: #c9c9c9;
+  width: 340px;
+  border-radius: 20px;
+`;
+
+const InputType = styled.input`
+  width: 300px;
+  height: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+  font-size: 16px;
+  background-color: transparent;
+  outline: none;
+  border: none;
+`;
+
+const ButtonAdd = styled.button`
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  background-color: #029b8e;
+  color: transparent;
+  border: none;
+  background-image: url("../../../public/addBtn.svg");
+  background-size: 16px;
+  background-position: center;
+  background-repeat: no-repeat;
+`;

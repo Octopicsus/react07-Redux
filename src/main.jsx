@@ -10,7 +10,7 @@ import "./index.css";
 
 export const store = configureStore({
   reducer: {
-    tobuy: tobuyReducer,
+    cart: tobuyReducer,
     products: productsReducer,
   },
 });
