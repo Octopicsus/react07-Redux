@@ -15,7 +15,6 @@ export default function Cart() {
     <>
       <MyCart>
         <h1>Bring App</h1>
-
         {itmeBuy.data.length > 0 && <Title>Cart:</Title>}
         <Wrapper>
           {itmeBuy.data.length === 0 && <Empty>Your cart is empty</Empty>}
@@ -65,6 +64,8 @@ const Empty = styled.span`
   margin-top: 40px;
   width: 100%;
   text-align: center;
+  color: grey;
+  font-size: 17px;
 `;
 
 const Title = styled.h3`

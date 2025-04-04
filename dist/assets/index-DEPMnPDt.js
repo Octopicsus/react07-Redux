@@ -78,6 +78,8 @@ Error generating stack: `+l.message+`
   margin-top: 40px;
   width: 100%;
   text-align: center;
+  color: grey;
+  font-size: 17px;
 `,hp=be.h3`
   text-align: left;
   width: 409px;
@@ -104,7 +106,7 @@ Error generating stack: `+l.message+`
   background-color: #029b8e;
   color: transparent;
   border: none;
-  background-image: url("../../../public/addBtn.svg");
+  background-image: url("./img/addBtn.svg");
   background-size: 16px;
   background-position: center;
   background-repeat: no-repeat;

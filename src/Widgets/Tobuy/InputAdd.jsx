@@ -28,7 +28,6 @@ export default function InputAdd() {
         onKeyDown={handleKeyDown}
         placeholder="Add your purchase to the list"
       />
-
       <ButtonAdd type="button" onClick={handleSave}>
         +
       </ButtonAdd>
@@ -63,7 +62,7 @@ const ButtonAdd = styled.button`
   background-color: #029b8e;
   color: transparent;
   border: none;
-  background-image: url("../../../public/addBtn.svg");
+  background-image: url("./img/addBtn.svg");
   background-size: 16px;
   background-position: center;
   background-repeat: no-repeat;
