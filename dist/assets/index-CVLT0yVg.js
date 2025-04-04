@@ -89,6 +89,8 @@ Error generating stack: `+l.message+`
   background-color: #c9c9c9;
   width: 340px;
   border-radius: 20px;
+  display: flex;
+  align-items: center;
 `,mp=be.input`
   width: 300px;
   height: 40px;

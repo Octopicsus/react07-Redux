@@ -41,6 +41,8 @@ const HandleInput = styled.div`
   background-color: #c9c9c9;
   width: 340px;
   border-radius: 20px;
+  display: flex;
+  align-items: center;
 `;
 
 const InputType = styled.input`
