@@ -38,7 +38,7 @@ export default function InputAdd() {
 
 const HandleInput = styled.div`
   margin: 0 auto;
-  margin-top: 50px;
+  margin-top: 80px;
   background-color: #c9c9c9;
   width: 340px;
   border-radius: 20px;

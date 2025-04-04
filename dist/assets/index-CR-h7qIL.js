@@ -83,7 +83,7 @@ Error generating stack: `+l.message+`
   width: 409px;
 `;function yp(){const[n,c]=Vt.useState(""),s=Lr(),f=()=>{s(K0({item:n,id:Date.now()})),c("")},d=y=>{(y.key==="Enter"||y.key===" ")&&f()};return Ot.jsxs(vp,{children:[Ot.jsx(mp,{type:"text",value:n,onChange:y=>c(y.target.value),onKeyDown:d,placeholder:"Add your purchase to the list"}),Ot.jsx(gp,{type:"button",onClick:f,children:"+"})]})}const vp=be.div`
   margin: 0 auto;
-  margin-top: 50px;
+  margin-top: 80px;
   background-color: #c9c9c9;
   width: 340px;
   border-radius: 20px;
