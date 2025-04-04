@@ -59,7 +59,7 @@ const ButtonAdd = styled.button`
   height: 40px;
   width: 40px;
   border-radius: 20px;
-  background-color: #029b8e;
+  background-color: #17857b;
   color: transparent;
   border: none;
   background-image: url("./img/addBtn.svg");
