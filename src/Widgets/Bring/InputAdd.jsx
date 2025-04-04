@@ -9,8 +9,10 @@ export default function InputAdd() {
   const dispatch = useDispatch();
 
   const handleSave = () => {
-    dispatch(addItem({ item, id: Date.now() }));
-    setItem("");
+    if (item.trim()) {
+      dispatch(addItem({ item, id: Date.now() }));
+      setItem("");
+    }
   };
 
   const handleKeyDown = (event) => {
