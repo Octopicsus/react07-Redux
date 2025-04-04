@@ -66,4 +66,5 @@ const ButtonAdd = styled.button`
   background-size: 16px;
   background-position: center;
   background-repeat: no-repeat;
+  cursor: pointer;
 `;
